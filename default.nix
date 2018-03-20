@@ -1,6 +1,5 @@
-let
-  pkgs = import <nixpkgs> {};
-in with pkgs;
+{ pkgs ? import ./nixpkgs.nix }:
+with pkgs;
 stdenv.mkDerivation {
   name = "builtwithnix.org";
   src = ./.;

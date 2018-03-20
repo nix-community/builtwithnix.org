@@ -1,0 +1,24 @@
+version: 2
+
+jobs:
+  build:
+    working_directory: /src
+    docker:
+      - image: nixorg/nix:circleci
+
+    steps:
+      - checkout
+      - run:
+          name: Build
+          command: nix-build
+      - add_ssh_keys:
+          fingerprints:
+            - "bf:11:ba:f2:b4:6d:b5:e6:96:54:f3:37:8d:d1:3d:3f"
+      - deploy:
+          name: Deploy gh-pages if master
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              git config --global user.email bot@circleci.com
+              git config --global user.name CircleCI
+              exec .circleci/push-gh-pages.sh
+            fi
