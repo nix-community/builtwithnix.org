@@ -14,11 +14,11 @@ jobs:
       - add_ssh_keys:
           fingerprints:
             - "13:c4:2e:1e:ea:db:fe:fe:3c:f8:93:a4:6f:10:79:cd"
+      - run: "ls ~/.ssh"
       - deploy:
           name: Deploy gh-pages if master
           command: |
-            if [ "${CIRCLE_BRANCH}" == "master" ]; then
-              git config --global user.email bot@circleci.com
-              git config --global user.name CircleCI
-              exec .circleci/push-gh-pages.sh
-            fi
+            rm ~/.ssh/id_rsa
+            git config --global user.email bot@circleci.com
+            git config --global user.name CircleCI
+            .circleci/push-gh-pages.sh ./result "$CIRCLE_REPOSITORY_URL"

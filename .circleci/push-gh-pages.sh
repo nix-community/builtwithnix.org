@@ -1,15 +1,13 @@
-#!/bin/sh -eu
-new_source=$(readlink -f "${1:-result}")
-owner=nix-community
-repo=builtwithnix.org
-branch=gh-pages
+#!/bin/sh -exu
+new_source=$(readlink -f "$1")
+repo_url=$2
+branch=${3:-gh-pages}
+repo_path=/tmp/repo.git
 
-git_repo=/tmp/repo.git
-
-git clone --bare --branch "$branch" --depth 1 -- "git@github.com:$owner/$repo.git" "$git_repo"
+git clone --bare --branch "$branch" --depth 1 -- "$repo_url" "$repo_path"
 
 g() {
-  git --work-tree="$new_source" --git-dir="$git_repo" "$@"
+  git --work-tree="$new_source" --git-dir="$repo_path" "$@"
 }
 
 cd "$new_source"
