@@ -13,7 +13,7 @@ jobs:
           command: nix-build
       - add_ssh_keys:
           fingerprints:
-            - "bf:11:ba:f2:b4:6d:b5:e6:96:54:f3:37:8d:d1:3d:3f"
+            - "13:c4:2e:1e:ea:db:fe:fe:3c:f8:93:a4:6f:10:79:cd"
       - deploy:
           name: Deploy gh-pages if master
           command: |
