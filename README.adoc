@@ -1,0 +1,18 @@
+= builtwithnix.org
+
+image:https://img.shields.io/badge/built%20with-nix-blue.svg[built with nix]
+
+.Markdown
+----
+![built with nix](https://img.shields.io/badge/built%20with-nix-blue.svg)
+----
+
+.reStructuredText
+----
+.. image:: https://img.shields.io/badge/built%20with-nix-blue.svg   :alt: built with nix
+----
+
+.AsciiDoc
+----
+image:https://img.shields.io/badge/built%20with-nix-blue.svg[built with nix]
+----
