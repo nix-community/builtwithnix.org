@@ -1,4 +1,6 @@
-= builtwithnix.org
+= Built with Nix
+
+== Add it to your project
 
 image:https://img.shields.io/badge/built%20with-nix-blue.svg[built with nix]
 
