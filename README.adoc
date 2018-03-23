@@ -2,19 +2,19 @@
 
 == Add it to your project
 
-image:https://img.shields.io/badge/built%20with-nix-blue.svg[built with nix]
+image:https://builtwithnix.org/badge.svg["built with nix", link="https://builtwithnix.org/"]
 
 .Markdown
 ----
-![built with nix](https://img.shields.io/badge/built%20with-nix-blue.svg)
+[![built with nix](https://builtwithnix.org/badge.svg)](https://builtwithnix.org)
 ----
 
 .reStructuredText
 ----
-.. image:: https://img.shields.io/badge/built%20with-nix-blue.svg   :alt: built with nix
+.. image:: https://builtwithnix.org/badge.svg :alt: built with nix :target: https://builtwithnix.org
 ----
 
 .AsciiDoc
 ----
-image:https://img.shields.io/badge/built%20with-nix-blue.svg[built with nix]
+image:https://builtwithnix.org/badge.svg["built with nix", link="https://builtwithnix.org/"]
 ----

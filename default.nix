@@ -12,6 +12,7 @@ stdenv.mkDerivation {
   installPhase = ''
     mkdir $out
     cp README.html $out/index.html
+    cp *.svg $out/
 
     echo builtwithnix.org > $out/CNAME
     touch $out/.nojekyll
