@@ -1,4 +1,4 @@
-= Built with Nix
+= ♥uilt with Nix
 
 == Add it to your project
 
