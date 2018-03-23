@@ -18,3 +18,5 @@ if ! g commit -m "Auto-generated [ci skip]"; then
   exit
 fi
 g push -f origin "$branch"
+
+rm -rf "$git_repo"
