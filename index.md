@@ -1,4 +1,6 @@
-# builtwithnix.org
+---
+layout: home
+---
 
 ## Build software only once
 
