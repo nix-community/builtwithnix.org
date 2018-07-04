@@ -38,6 +38,8 @@ TODO: missing a few paragraphs here
 
 ## Projects built with Nix
 
+[![built with nix](https://builtwithnix.org/badge.svg)](https://builtwithnix.org)
+
 Curated list of projects built with Nix
 
 - https://github.com/nix-community/todomvc-nix
