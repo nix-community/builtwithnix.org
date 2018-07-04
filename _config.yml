@@ -1,1 +1,10 @@
-remote_theme: "jameshamann/jekyll-material-theme"
+title: Built with Nix
+
+remote_theme: mmistakes/minimal-mistakes
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"

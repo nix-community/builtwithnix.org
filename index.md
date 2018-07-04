@@ -1,7 +1,3 @@
----
-layout: home
----
-
 ## Build software only once
 
 nix is a software build tool that works across languages and creates reliable builds.
@@ -48,16 +44,23 @@ Curated list of projects built with Nix
 
 **Is your project missing from the list?**
 Share the love by embedding the badge into your project’s README:
+
 **Markdown**
 
-    [![built with nix](https://builtwithnix.org/badge.svg)](https://builtwithnix.org)
+```md
+[![built with nix](https://builtwithnix.org/badge.svg)](https://builtwithnix.org)
+```
 
 **reStructuredText**
 
-    .. image:: https://builtwithnix.org/badge.svg :alt: built with nix :target: https://builtwithnix.org
+```rst
+.. image:: https://builtwithnix.org/badge.svg :alt: built with nix :target: https://builtwithnix.org
+```
 
 **AsciiDoc**
 
-    image:https://builtwithnix.org/badge.svg["built with nix", link="https://builtwithnix.org/"]
+```asciidoc
+image:https://builtwithnix.org/badge.svg["built with nix", link="https://builtwithnix.org/"]
+```
 
 fork https://github.com/nix-community/builtwithnix.org and submit a pull-request to list your project
