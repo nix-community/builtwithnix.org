@@ -1,20 +1,11 @@
-# Jekyll Materialize Starter Template v0.1
+# Built with Nix
 
-*A Site Starter Materialize Templates.
+[![Built with Nix](https://builtwithnix.org/badge.svg)](https://builtwithnix.org)
 
-The theme is a fork of the [minima][1]
+This is the source for the https://builtwithnix.org website.
 
-![minima theme preview](/screenshot.png)
+## Development
 
-
-# License
-
-The theme is available as open source under the terms of the [MIT License][2].
-
-[Materialize][3] a  modern responsive front-end framework based on Material Design
-
-Copyright © 2017 Marco Damiani. Powered by <a href="http://jekyllrb.com">Jekyll</a>
-
-[1]: https://github.com/jekyll/minima
-[2]: https://opensource.org/licenses/MIT
-[3]: http://materializecss.com/
+```
+nix-shell --run "jekyll serve"
+```
