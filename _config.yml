@@ -1,12 +1,8 @@
 title: Built with Nix
-
-remote_theme: mmistakes/minimal-mistakes
+theme: jekyll-theme-primer
 
 logo: badge.svg
-
-defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-    values:
-      layout: "default"
+markdown: CommonMarkGhPages
+commonmark:
+  options: ["SMART", "FOOTNOTES"]
+  extensions: ["strikethrough", "autolink", "tables"]
