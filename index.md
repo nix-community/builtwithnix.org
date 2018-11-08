@@ -19,8 +19,8 @@ Use the same tool to build one project, hundred of projects, configure machines 
 
 Take advantage of more than 10000 predefined build recipes, including security updates.
 
-**Never recompile twice**
-Nix allows to easily share build results across machines. If the CI has built the project, developers or servers can download the build results instead of re-building the same thing.
+**Never compile twice**
+Nix allows to easily share build results across machines. If the CI has built the project, developers and servers can download the build results instead of re-building the same thing.
 
 ## Trusted by industry leaders
 - Target
