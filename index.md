@@ -43,6 +43,7 @@ TODO: missing a few paragraphs here
 Curated list of projects built with Nix
 
 - https://github.com/nix-community/todomvc-nix
+- [dapp.tools](https://dapp.tools)
 
 **Is your project missing from the list?**
 Share the love by embedding the badge into your project’s README:
