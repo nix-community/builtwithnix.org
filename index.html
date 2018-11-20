@@ -12,11 +12,21 @@
         font-family: 'Glegoo', serif;
       }
 
-      #menu {
-        background-image: linear-gradient(to right, #3d519a, #43329c);
+      #top {
         box-shadow: 0 0 20px 10px #43329c;
+        background-image: url(img/nix_background.svg);
+        background-repeat: repeat;
+        background-position: center;
+        padding-bottom: 15vh;
+      }
+
+      #menu {
         line-height: 5rem;
         color: #fff;
+      }
+
+      #menu .container-wider {
+        border-bottom: 0.2rem dashed white;
       }
 
       #menu img {
@@ -32,29 +42,33 @@
         text-align: center;
       }
 
-      #intro {
-        margin: 3rem 0 25vh 0;
-      }
-
       #intro h1 {
+        color: #fff;
         margin: 0;
+        margin-top: 15vh;
+        font-size: 3rem;
+        font-weight: 100;
       }
 
       #intro a {
         background: #4fdaf1;
-        line-height: 6rem;
-        font-size: 2rem;
-        padding-left: 4rem;
-        width: 100%;
         color: #333894;
-        box-shadow: -5px 5px 10px 0px #4fdaf1aa;
-        border-radius: 0.5rem;
+        font-size: 2rem;
+        margin-top: 15vh;
+        padding: 0.5rem 10rem;
+        box-shadow: 0px 0px 10px 0px #4fdaf1aa;
+        border-radius: 2rem;
+      }
+
+      #why {
+        margin-top: 15vh;
       }
 
       #testimonial {
         background-image: linear-gradient(to right, #3d519a, #43329c);
         margin: 0 0 0 0;
         padding: 15vh 0 0 0;
+        box-shadow: 0 0 20px 10px #43329c;
       }
 
       #testimonial h1 {
@@ -73,19 +87,16 @@
         margin-bottom: 6rem;
       }
 
-      .feature img:before {
-        padding: 1em;
-        border: 2em solid black;
-        display: inline;
-        width: 100px;
-        height: 100px;
-        content: ' ';
-      }
-
       .feature img {
         background-color: #fff;
         box-shadow: -5px 5px 10px 0px #0004;
         border-radius: 1rem;
+        width: 60%;
+        padding: 1rem;
+      }
+
+      .feature .image {
+        padding: 1rem;
       }
 
       .feature .content {
@@ -99,6 +110,9 @@
       #start {
         text-align: center;
         padding: 15vh 0;
+        background-image: url(img/get_started_background.svg);
+        background-repeat: repeat-x;
+        background-position: center;
       }
 
       article > .flex-left > h1 {
@@ -111,6 +125,8 @@
 
       #projects {
         background-color: #4fdaef;
+        box-shadow: 0 0 20px 10px #4fdaef;
+        padding: 15vh 0;
       }
 
       #projects p {
@@ -159,6 +175,22 @@
       #projects a {
         color: #43329c;
         font-weight: bold;
+      }
+
+      #icons {
+        margin-top: -7rem;
+      }
+
+      #icons .icons {
+        display: flex;
+        height: 7rem;
+        overflow: hidden;
+      }
+
+      #icons img {
+        flex: 1;
+        height: 12rem;
+        opacity: 0.6;
       }
 
       @media (max-width: 767px) {
@@ -215,42 +247,48 @@
   </head>
   <body>
 
-    <header class="flex-center" id="menu">
-      <div class="container-wider">
-        <div class="flex-left flex-wrap">
-          <div class="unit-1-3 flex-middle flex-center unit-1-on-mobile"><img src="img/nix.svg" alt="Built with Nix logo"></div>
-          <div class="unit-1-3 hide-on-mobile">&nbsp;</div>
-          <div class="unit-1-3 unit-1-on-mobile">
-            <nav class="flex-right">
-              <div class="unit"><a href="https://nixos.org/nix/about.html">About</a></div>
-              <div class="unit"><a href="https://nixos.org/nix/">Download</a></div>
-              <div class="unit"><a href="https://nixos.org/nix/manual/">Manual</a></div>
-            </nav>
+    <div id="top">
+      <header class="flex-center" id="menu">
+        <div class="container-wider">
+          <div class="flex-left flex-wrap">
+            <div class="unit-1-3 flex-middle flex-center unit-1-on-mobile"><img src="img/nix.svg" alt="Built with Nix logo"></div>
+            <div class="unit-1-3 hide-on-mobile">&nbsp;</div>
+            <div class="unit-1-3 unit-1-on-mobile">
+              <nav class="flex-right">
+                <div class="unit"><a href="https://nixos.org/nix/about.html">About</a></div>
+                <div class="unit"><a href="https://nixos.org/nix/">Download</a></div>
+                <div class="unit"><a href="https://nixos.org/nix/manual/">Manual</a></div>
+              </nav>
+            </div>
           </div>
         </div>
+      </header>
+
+      <div class="flex-center" id="intro">
+        <div class="container-wider">
+          <article class="flex-left flex-wrap">
+            <div class="unit-1 flex-center">
+              <h1>Build software only once</h1>
+            </div>
+
+            <div class="unit-1 flex-center">
+              <a href="https://nixos.org/nix/download.html">Get Nix</a>
+            </div>
+          </article>
+        </div>
       </div>
-    </header>
+    </div>
 
-    <div class="flex-center">
+    <div class="flex-center" id="why">
       <div class="container-wider">
-        <article class="flex-left flex-wrap" id="intro">
-          <div class="unit-1-on-mobile unit-2-3">
-            <h1>Build software<br/>only once</h1>
-          </div>
-
-          <div class="unit-1-on-mobile unit-1-3 flex-center link">
-            <a href="https://nixos.org/nix/download.html">Get Nix</a>
-          </div>
-        </article>
-
-        <article id="why">
+        <article>
           <div class="flex-left">
             <h1 class="unit flex-center">Why Nix?</h1>
           </div>
 
           <div class="feature flex-left flex-wrap">
             <div class="image unit-1-3 unit-1-on-mobile flex-center flex-middle">
-              <img src="img/works.png"/>
+              <img src="img/works.svg"/>
             </div>
 
             <div class="content unit">
@@ -261,7 +299,7 @@
 
           <div class="feature flex-left flex-wrap">
             <div class="image unit-1-3 unit-1-on-mobile flex-center flex-middle">
-              <img src="img/languages.png"/>
+              <img src="img/languages.svg"/>
             </div>
             <div class="content unit">
               <h2>One tool, many languages</h2>
@@ -271,7 +309,7 @@
 
           <div class="feature flex-left flex-wrap">
             <div class="image unit-1-3 unit-1-on-mobile flex-center flex-middle">
-              <img src="img/zero_to_cloud.png"/>
+              <img src="img/zero_to_cloud.svg"/>
             </div>
             <div class="content unit">
               <h2>From zero to cloud</h2>
@@ -281,7 +319,7 @@
 
           <div class="feature flex-left flex-wrap">
             <div class="image unit-1-3 unit-1-on-mobile flex-center flex-middle">
-              <img src="img/packages.png"/>
+              <img src="img/packages.svg"/>
             </div>
             <div class="content unit">
               <h2>Pull from a rich package set</h2>
@@ -291,7 +329,7 @@
 
           <div class="feature flex-left flex-wrap">
             <div class="image unit-1-3 unit-1-on-mobile flex-center flex-middle">
-              <img src="img/compile.png"/>
+              <img src="img/compile.svg"/>
             </div>
             <div class="content unit-2-3 unit-1-on-mobile">
               <h2>Never compile the same project twice</h2>
@@ -404,9 +442,9 @@ Pellentesque dapibus suscipit ligula.  Donec posuere augue in quam.  Etiam vel t
       </article>
     </div>
 
-    <div class="flex-center">
+    <div class="flex-center" id="start">
       <div class="container-wider">
-        <article id="start">
+        <article>
 
           <div class="flex-left">
             <h1 class="unit flex-center">Get started</h1>
@@ -426,8 +464,8 @@ Pellentesque dapibus suscipit ligula.  Donec posuere augue in quam.  Etiam vel t
               </div>
             </div>
 
-            <div class="unit-1-3">
-              <img src="img/tutorials_logo.png">
+            <div class="unit-1-3 hide-on-mobile">
+              <img src="img/get_started.svg">
             </div>
 
             <div class="unit-1-3">
@@ -497,6 +535,17 @@ Pellentesque dapibus suscipit ligula.  Donec posuere augue in quam.  Etiam vel t
       </div>
     </div>
 
+    <div class="flex-center hide-on-mobile" id="icons">
+      <div class="container-fluid">
+        <div class="icons">
+          <img src="img/works_simple.svg"/>
+          <img src="img/languages_simple.svg"/>
+          <img src="img/zero_to_cloud_simple.svg"/>
+          <img src="img/packages_simple.svg"/>
+          <img src="img/compile_simple.svg"/>
+        </div>
+      </div>
+    </div>
 
     <style>
       .carousel {
